@@ -15,5 +15,4 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
-            /home/vhespir/deploy.sh
+          script: /home/deploy/deploy.sh ${{ github.event.repository.name }}
