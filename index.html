@@ -1,2 +1,123 @@
-<h1>shanenichols.dev</h1>
-<p> Test 13 </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shane Nichols</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="prompt"><span class="user">shane</span><span class="at">@</span><span class="host">shanenichols.dev</span><span class="symbol"> ~$</span></p>
+        <h1>Shane Nichols</h1>
+        <p class="tagline">Systems &middot; Self-Hosting &middot; Security</p>
+        <div class="hero-links">
+          <a href="mailto:shane@shanenichols.dev">shane@shanenichols.dev</a>
+          <a href="https://github.com/vhespir" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/shanenichols" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I'm a second-year Computer Science student at UMGC with a minor in Cybersecurity, working toward a career in IT, sysadmin, or security. I learn best by doing — most of my hands-on experience comes from building and maintaining my homelab, where I self-host a stack of services across containerized infrastructure.
+      </p>
+      <p>
+        Currently studying for CompTIA Security+. Looking for entry-level opportunities in IT, systems, or security.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills &amp; Tools</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Systems</h3>
+          <ul>
+            <li>Linux (Arch, Ubuntu Server)</li>
+            <li>Docker &amp; containerization</li>
+            <li>Bash / zsh scripting</li>
+            <li>Systemd</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Networking</h3>
+          <ul>
+            <li>Nginx (reverse proxy)</li>
+            <li>Tailscale (VPN mesh)</li>
+            <li>DNS filtering via Pi-hole &amp; Tailscale</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Monitoring &amp; Security</h3>
+          <ul>
+            <li>Grafana &amp; Prometheus</li>
+            <li>Vaultwarden (self-hosted Bitwarden)</li>
+            <li>Restic backups</li>
+            <li>CompTIA Security+ (in progress)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="homelab">
+      <h2>Homelab</h2>
+      <p class="section-intro">A small but functional home infrastructure I built and maintain daily.</p>
+      <div class="nodes">
+
+        <div class="node">
+          <div class="node-header">
+            <span class="node-name">nexus</span>
+            <span class="node-os">Ubuntu Server</span>
+          </div>
+          <p class="node-desc">Dell Wyse 5070, repurposed as a home server. Runs 15+ Docker containers.</p>
+          <ul class="service-list">
+            <li>Home Assistant &amp; Zigbee2MQTT</li>
+            <li>Nextcloud</li>
+            <li>Frigate NVR</li>
+            <li>Navidrome</li>
+            <li>Pi-hole + Stubby</li>
+            <li>Vaultwarden</li>
+            <li>FreshRSS</li>
+            <li>Grafana &amp; Prometheus</li>
+            <li>Syncthing</li>
+          </ul>
+        </div>
+
+        <div class="node">
+          <div class="node-header">
+            <span class="node-name">vps</span>
+            <span class="node-os">Edge Layer</span>
+          </div>
+          <p class="node-desc">Remote VPS acting as an edge proxy and public-facing entry point.</p>
+          <ul class="service-list">
+            <li>Nginx reverse proxy</li>
+            <li>Website hosting</li>
+            <li>Tailscale exit node</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Open to entry-level roles in IT, sysadmin, or cybersecurity. Feel free to reach out.</p>
+      <a href="mailto:shane@shanenichols.dev" class="contact-link">shane@shanenichols.dev</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with HTML &amp; CSS &mdash; Shane Nichols</p>
+  </footer>
+
+</body>
+</html>
